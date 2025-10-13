@@ -1,0 +1,46 @@
+<navmesh>
+	<polygons>
+		<polygon>
+			<point x="-287.7333" y ="-183.1169"/>
+			<point x="-87.73334" y ="-183.1169"/>
+			<point x="-72" y ="-135.7143"/>
+			<point x="-50.13334" y ="-21.42857"/>
+			<point x="-87.73334" y ="16.88312"/>
+			<point x="-287.7333" y ="16.88312"/>
+		</polygon>
+		<polygon>
+			<point x="-205.0667" y ="-105.1948"/>
+			<point x="-199.4667" y ="-106.4935"/>
+			<point x="-162.6667" y ="-107.1429"/>
+			<point x="-131.2" y ="-107.1429"/>
+			<point x="-5.066666" y ="-105.1948"/>
+			<point x="-5.066666" y ="94.80519"/>
+			<point x="-59.2" y ="127.9221"/>
+			<point x="-122.1333" y ="153.2467"/>
+			<point x="-205.0667" y ="94.80519"/>
+		</polygon>
+		<polygon>
+			<point x="9.333336" y ="-74.02597"/>
+			<point x="108.8" y ="-122.7273"/>
+			<point x="209.3333" y ="-74.02597"/>
+			<point x="290.1333" y ="38.96104"/>
+			<point x="209.3333" y ="125.974"/>
+			<point x="70.4" y ="175.974"/>
+			<point x="9.333336" y ="125.974"/>
+		</polygon>
+	</polygons>
+	<links>
+		<link>
+			<start polygon="1" edgestart="4" edgeend="5"/>
+			<end polygon="2" edgestart="6" edgeend="0"/>
+		</link>
+		<link>
+			<start polygon="1" edgestart="4" edgeend="5"/>
+			<end polygon="2" edgestart="6" edgeend="0"/>
+		</link>
+		<link>
+			<start polygon="1" edgestart="4" edgeend="5"/>
+			<end polygon="2" edgestart="6" edgeend="0"/>
+		</link>
+	</links>
+</navmesh>

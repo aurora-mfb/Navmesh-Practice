@@ -1,0 +1,15 @@
+<root>
+	<Costs>
+        <Tile type="A" cost="1" />
+        <Tile type="B" cost="2" />
+        <Tile type="C" cost="3" />
+        <Tile type="#" cost="9999" />
+    </Costs>
+
+    <Grid width="6" height="4">
+        <Row>AACCCA</Row>
+        <Row>#AAAA#</Row>
+        <Row>AA##AA</Row>
+        <Row>ABAAAA</Row>
+    </Grid>
+</root>
