@@ -33,9 +33,6 @@ public:
   // Dibuja la malla en el mundo
   void DrawDebug(AActor* Owner, UMaterialInterface* Material = nullptr);
 
-  // Retorna el índice del polígono donde cae un punto
-  int32 GetPolygonIndexAtPoint(const FVector2D& Point) const;
-
   // Acceso directo a datos
   const TArray<FNavPolygon>& GetPolygons() const { return Polygons; }
 
@@ -50,5 +47,4 @@ private:
   TArray<FNavLink> Links;
 
   bool LoadFromXML(const FString& FullPath);
-  bool IsPointInPolygon(const FVector2D& Point, const TArray<FVector>& PolygonPoints) const;
 };

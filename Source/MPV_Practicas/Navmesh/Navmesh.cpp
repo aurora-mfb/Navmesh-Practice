@@ -115,34 +115,6 @@ void Navmesh::DrawDebug(AActor* Owner, UMaterialInterface* Material)
   UE_LOG(LogTemp, Log, TEXT("NavMesh dibujada en escena."));
 }
 
-int32 Navmesh::GetPolygonIndexAtPoint(const FVector2D& Point) const
-{
-  for (int32 i = 0; i < Polygons.Num(); ++i)
-  {
-    if (IsPointInPolygon(Point, Polygons[i].Points))
-      return i;
-  }
-  return -1;
-}
-
-bool Navmesh::IsPointInPolygon(const FVector2D& P, const TArray<FVector>& Poly) const
-{
-  int32 Crossings = 0;
-  int32 Count = Poly.Num();
-  for (int32 i = 0; i < Count; ++i)
-  {
-    FVector2D A(Poly[i].X, Poly[i].Z);
-    FVector2D B(Poly[(i + 1) % Count].X, Poly[(i + 1) % Count].Z);
-
-    if (((A.Y > P.Y) != (B.Y > P.Y)) &&
-      (P.X < (B.X - A.X) * (P.Y - A.Y) / (B.Y - A.Y) + A.X))
-    {
-      Crossings++;
-    }
-  }
-  return (Crossings % 2 == 1);
-}
-
 TArray<FVector> Navmesh::FindPath(const FVector& Start, const FVector& End)
 {
   TArray<FVector> Path;
