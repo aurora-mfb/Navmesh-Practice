@@ -1,3 +1,3 @@
 # Navmesh-Practice
 
-A practice made for a artificial inteligent subject that focus on implementing by code in c++, a navmesh with pathfinding in Unreal Engine.
+A practice exercise for an artificial intelligence system, focused on implementing a navigation mesh (NavMesh) with pathfinding in Unreal Engine using C++.
